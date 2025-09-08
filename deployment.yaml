@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gfj-backend
+  namespace: gfj-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gfj-backend
+  template:
+    metadata:
+      labels:
+        app: gfj-backend
+    spec:
+      containers:
+        - name: gfj-backend
+          image: docker.io/chankyswami/gfj-backend:latest
+          ports:
+            - containerPort: 8081
