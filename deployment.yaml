@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gfj-backend
-  namespace: gfj-backend
+  namespace: gfj-app
 spec:
   replicas: 1
   selector:
