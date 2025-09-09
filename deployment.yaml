@@ -18,3 +18,8 @@ spec:
           image: docker.io/chankyswami/gfj-backend:ecedd9b
           ports:
             - containerPort: 8081
+          envFrom:
+            - configMapRef:
+                name: gfj-backend-config
+            - secretRef:
+                name: gfj-backend-secrets

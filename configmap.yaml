@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gfj-backend-config
+  namespace: gfj-backend
+data:
+  SPRING_PROFILES_ACTIVE: "dev"
+  DB_HOST: "mysql-service.databases.svc.cluster.local"
+  DB_HOST_PORT: "3306"
+  DB_NAME: "gfj_db"
+  S3_BUCKET_NAME: "quotation-gfg-image"
+  S3_REGION: "ap-south-1"
