@@ -5,7 +5,7 @@ metadata:
   namespace: gfj-app
 data:
   SPRING_PROFILES_ACTIVE: "dev"
-  DB_HOST: "mysql-service.databases.svc.cluster.local"
+  DB_HOST: "mysql-service"
   DB_HOST_PORT: "3306"
   DB_NAME: "gfj_db"
   S3_BUCKET_NAME: "quotation-gfg-image"
