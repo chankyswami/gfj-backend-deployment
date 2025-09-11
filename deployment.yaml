@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: gfj-backend
-          image: docker.io/chankyswami/gfj-backend:49d0218
+          image: docker.io/chankyswami/gfj-backend:c9d98b5
           ports:
             - containerPort: 8081
           envFrom:
